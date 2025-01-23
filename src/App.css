@@ -1,0 +1,64 @@
+/* Apply border-box sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure margins and paddings don't break layouts */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(4, 4rem); /* 4 columns */
+  box-shadow: 0 4px 6px black;
+}
+
+
+
+.Span2 {
+  grid-column: span 2; /* Span 2 columns */
+  text-align: center;
+  padding: 10px;
+}
+
+.Grid button {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  outline: none;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  /* border-radius: 5px; */
+}
+.Grid button:hover,
+.Grind button:focus{
+  background-color: rgb(255,255,255,0.75);
+}
+
+.output {
+  min-height: 100px;
+  grid-column: span 4; /* Span all 4 columns */
+  background-color: rgb(232, 233, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  word-wrap: break-word;
+  word-break: break-all;
+  gap: 10px;
+  padding: 10px;
+}
+.smallOp{
+  font-size: 1rem;
+  opacity: 50%;
+}
+.bigOp{
+  font-size: 2rem;
+}
